@@ -6,5 +6,3 @@ Let's start learning about git and github from youtube this makes easy for stude
 Lets connect with new id which is more useful then the other id, lets try using new id
 <br>
 lets add another new statement to readme txt file lets see these changes get reflected into main branch or not
-fdafadfadfad
-addvaluegit
