@@ -5,9 +5,6 @@ Let's start learning about git and github from youtube this makes easy for stude
 <br>
 Lets connect with new id which is more useful then the other id, lets try using new id
 <br>
-<<<<<<< HEAD
 lets write one more content on the screen
-
-=======
 lets add another new statement to readme txt file lets see these changes get reflected into main branch or not
->>>>>>> main
+
