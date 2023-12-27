@@ -4,4 +4,6 @@ dlfjaosdfladfas dfasdf pasdofadfap
 afasdfasdfasdf
 asdfadfsfsdf
 dfadfadfadfadfa
-gi
+define new functionality to the existing script
+bugs are fixed 
+now code is ready to deploy in git
