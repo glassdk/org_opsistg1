@@ -1,0 +1,33 @@
+create external table ext_part_data1(empno int,ename string,job string,mgr int,hiredate string,sal int,comm int)
+partitioned by(deptno int)
+clustered by (job) into 2 buckets
+row format delimited
+fields terminated by '|'
+location '/user/hive/warehouse/userdb.db/partitiondata';
+
+
+###### site will help to tell you how to perform dml operation on hive table
+https://www.cloudduggu.com/hive/dml-operations/
+
+set hive.support.concurrency=true;
+set hive.enforce.bucketing=true;
+set hive.exec.dynamic.partition.mode=nonstrict;
+set hive.compactor.initiator.on=true;
+set hive.compactor.worker.threads=1;
+set hive.txn.manager=org.apache.hadoop.hive.ql.lockmgr.DbTxnManager;
+
+
+
+CREATE TABLE acidexample (key int, value int)
+PARTITIONED BY (load_date date)
+CLUSTERED BY(key) INTO 3 BUCKETS
+STORED AS ORC TBLPROPERTIES ('transactional'='true'); 
+
+
+INSERT INTO acidexample partition (load_date='2016-03-01') VALUES (1, 1);
+INSERT INTO acidexample partition (load_date='2016-03-02') VALUES (2, 2);
+INSERT INTO acidexample partition (load_date='2016-03-03') VALUES (3, 3); 
+
+
+
+
